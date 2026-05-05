@@ -14,8 +14,8 @@
     <section class="header">
         <nav>
             <a href="index.html"><img src="eduford_img/logo.png" alt="logo"></a>
-            <div class="nav-links">
-                <i class="fa-solid fa-x"></i>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-x" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -24,7 +24,7 @@
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
     <div class="text-box">
         <h1>World's Biggest University</h1>
@@ -34,5 +34,56 @@
         <a href="" class="hero-btn">Visit us to know more</a>
     </div>
     </section>
+
+    <!--courses-->
+    <section class="course">
+        <h1>Courses we offer</h1>
+        <p>Step-by-step learning paths designed by experts.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate (11th & 12th)</h3>
+                <p>
+                    MPC (Mathematics, Physics, Chemistry) <br>
+                    BiPC (Biology, Physics, Chemistry) <br>
+                    MEC (Mathematics, Economics, Commerce) <br>
+                    CEC (Civics, Economics, Commerce) <br>
+                    HEC (History, Economics, Civics) <br>
+                </p>
+            </div>
+                <div class="course-col">
+                <h3>Undergraduate Degree</h3>
+                <p>
+                    B.Tech / BE (Engineering) <br>
+                    B.Sc (Science) <br>
+                    B.Com (Commerce) <br>
+                    BBA (Business Administration) <br>
+                    BA (Arts & Humanities) <br>
+                </p>
+            </div>
+                <div class="course-col">
+                <h3>Postgraduate (PG)</h3>
+                <p>
+                    M.Tech (Engineering) <br>
+                    M.Sc (Science) <br>
+                    M.Com (Commerce) <br>
+                    MBA (Business Administration) <br>
+                    MA (Arts & Humanities) <br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!--Javascript for toggle menu only-->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
 </body>
 </html>
